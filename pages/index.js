@@ -1,4 +1,11 @@
 import Head from "next/head";
+import Layout from "../components/home/Layout";
+import Slider from "../components/home/Slider";
+import Banner from "../components/home/Banner";
+import FeaturedProducts from "../components/home/FeaturedProducts";
+import Discounts from "../components/home/Discount";
+import PurchaseOnline from "../components/home/PurchaseOnline";
+import BrandLogo from "../components/home/BrandLogo";
 
 const Home = () => {
   return (
@@ -14,7 +21,15 @@ const Home = () => {
 
         <title>Home || mchongotz</title>
       </Head>
-      <div className="container"></div>
+
+      <Layout>
+        <Slider />
+        <Banner />
+        <FeaturedProducts />
+        <Discounts />
+        <PurchaseOnline />
+        <BrandLogo />
+      </Layout>
     </>
   );
 };
