@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="description" content="" />
         <meta name="keyword" content="" />
