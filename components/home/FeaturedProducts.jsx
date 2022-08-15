@@ -48,7 +48,7 @@ export const ProductCard = ({ children }) => {
     <div className={Styles.product__card}>
       <div className={Styles.card__header}>
         <ProductLabel text="new" />
-        <ProductPrice price="1,200,000" />
+        <ProductPrice price="56.20" />
       </div>
 
       {children}
@@ -57,7 +57,7 @@ export const ProductCard = ({ children }) => {
 };
 
 const ProductPrice = ({ price }) => {
-  return <span className={Styles.product__price}>{price} Tsh</span>;
+  return <span className={Styles.product__price}>$ {price}</span>;
 };
 
 const ProductLabel = ({ text }) => {
@@ -72,7 +72,7 @@ export const ProductImage = ({ url }) => {
   );
 };
 
-const ProductBody = ({ title }) => {
+export const ProductBody = ({ title }) => {
   return (
     <div className="text-center">
       <h3 className="text-md font-bold text-gray-600 uppercase">{title}</h3>
