@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Button from "../Button";
 import styles from "../../styles/Slider.module.css";
 
 const Slider = () => {
@@ -96,21 +96,11 @@ const SliderContent = () => {
                 Ipsum, you need to be sure there hidden in the middle of text.{" "}
               </p>
             </div>
-            <Button text="Shop Now" />
+            <Button text="Shop Now" style="text-xl p-3" />
           </div>
         );
       })}
     </>
-  );
-};
-
-const Button = ({ text }) => {
-  return (
-    <Link href="/">
-      <a className="uppercase border border-slate-400 font-medium text-slate-700 text-xl p-3 hover:bg-cyan-400 hover:text-white">
-        {text}
-      </a>
-    </Link>
   );
 };
 

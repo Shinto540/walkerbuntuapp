@@ -1,0 +1,41 @@
+.products {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.product__title {
+  @apply text-center text-gray-700;
+}
+
+.product__title h2 {
+  @apply text-3xl font-bold;
+}
+
+.title__underline {
+  @apply w-16 border-b-2 border-gray-700 inline-block;
+}
+
+.product__card {
+  @apply p-5 shadow-2xl;
+}
+
+.card__header {
+  @apply flex justify-between;
+}
+
+.product__label {
+  @apply py-1 px-2 rounded-md bg-sky-500 text-white;
+}
+
+.label__new {
+  @apply bg-sky-500 text-white;
+}
+
+.label__sale {
+  @apply bg-gray-800 text-white;
+}
+
+.product__price {
+  @apply font-medium text-xl text-gray-600;
+}
