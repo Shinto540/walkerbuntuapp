@@ -17,21 +17,27 @@ const FeaturedProducts = () => {
 
       <div className="flex gap-10 mt-16">
         <ProductCard>
-          <ProductImage url="/product/pr-5.png" />
-          <ProductBody title="dell - All in one" />
-        </ProductCard>
-        <ProductCard>
           <ProductImage url="/product/pr-1.png" />
           <ProductBody title="dell - All in one" />
         </ProductCard>
         <ProductCard>
           <ProductImage url="/product/pr-2.png" />
-          <ProductBody title="dell - All in one" />
+          <ProductBody title="mac keyboard" />
         </ProductCard>
         <ProductCard>
           <ProductImage url="/product/pr-3.png" />
-          <ProductBody title="dell - All in one" />
+          <ProductBody title="headphone" />
         </ProductCard>
+        <ProductCard>
+          <ProductImage url="/product/pr-4.png" />
+          <ProductBody title="laptop adaptor" />
+        </ProductCard>
+      </div>
+      <div className={`${Styles.prev__next} ${Styles.prev}`}>
+        P<br />r<br />e<br />v
+      </div>
+      <div className={`${Styles.prev__next} ${Styles.next}`}>
+        N<br />e<br />x<br />t
       </div>
     </section>
   );

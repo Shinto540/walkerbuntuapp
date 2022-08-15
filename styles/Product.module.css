@@ -1,7 +1,8 @@
 .products {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 .product__title {
@@ -38,4 +39,16 @@
 
 .product__price {
   @apply font-medium text-xl text-gray-600;
+}
+
+.prev__next {
+  @apply bg-gray-100 font-medium py-2 px-3 absolute top-72 cursor-pointer;
+}
+
+.next {
+  right: -70px;
+}
+
+.prev {
+  left: -70px;
 }
