@@ -1,9 +1,23 @@
 .products {
-  width: 90%;
-  max-width: 1280px;
+  @apply w-[90%] max-w-[1280px] mx-auto relative py-[30px];
+}
+
+.products__container {
+  width: 70%;
   margin: 0 auto;
-  position: relative;
-  padding: 20px 0;
+  @apply grid grid-cols-1 gap-8 mt-16;
+}
+
+@media screen and (min-width: 678px) {
+  .products__container {
+    @apply grid-cols-2 w-full;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products__container {
+    @apply grid-cols-4;
+  }
 }
 
 .product__title {
@@ -15,12 +29,11 @@
 }
 
 .title__underline {
-  @apply w-16 border-b-2 border-gray-700 inline-block;
+  @apply w-[50px] border-b-4 border-gray-600 inline-block;
 }
 
 .product__card {
-  max-width: 280px;
-  @apply p-5 shadow-2xl;
+  @apply p-5 shadow-lg w-full max-w-[350px] hover:shadow-2xl;
 }
 
 .card__header {
@@ -28,7 +41,7 @@
 }
 
 .product__label {
-  @apply py-1 px-2 rounded-md bg-sky-500 text-white;
+  @apply py-1 px-2 rounded-md  text-white;
 }
 
 .label__new {
@@ -36,21 +49,52 @@
 }
 
 .label__sale {
-  @apply bg-gray-800 text-white;
+  @apply bg-gray-600 text-white;
 }
 
 .product__price {
   @apply font-medium text-xl text-gray-600;
 }
 
+/* icons action bar */
+.action__bar {
+  @apply grid grid-cols-4 divide-x-2 bg-gray-100 text-gray-600 p-3 mt-4;
+}
+
+.action {
+  @apply pl-4 cursor-pointer relative;
+}
+
+.tooltip__container {
+  @apply bg-sky-500 text-white text-center rounded-md px-2 py-[2px] absolute top-[-50px] left-[-20%];
+  display: none;
+  width: max-content;
+}
+
+.action:hover .tooltip__container {
+  display: block;
+}
+
+.tooltip__text {
+  @apply text-sm;
+}
+
+.tooltip__container::after {
+  content: "";
+  @apply absolute top-full left-[50%] ml-[-5px] border-[7px];
+  border-color: rgba(14, 156, 233, 0.9) transparent transparent transparent;
+}
+
+/* product prev or next controller */
+
 .prev__next {
-  @apply bg-gray-100 font-medium py-2 px-3 absolute top-72 cursor-pointer;
+  @apply bg-gray-100 rounded-sm font-medium py-2 px-3 absolute top-72 cursor-pointer hover:bg-sky-400;
 }
 
 .next {
-  right: -70px;
+  @apply right-[-70px];
 }
 
 .prev {
-  left: -70px;
+  @apply left-[-70px];
 }
