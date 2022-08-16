@@ -43,12 +43,6 @@ const PurchaseOnline = () => {
           <ProductBody title="laptop adaptor" />
         </ProductCard>
       </div>
-      <div className={`${Styles.prev__next} ${Styles.prev}`}>
-        P<br />r<br />e<br />v
-      </div>
-      <div className={`${Styles.prev__next} ${Styles.next}`}>
-        N<br />e<br />x<br />t
-      </div>
     </section>
   );
 };
