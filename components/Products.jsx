@@ -47,7 +47,7 @@ export const ProductCard = ({ labelText, price, currency, imgUrl, title }) => {
         <PriceLabel price={price} currency={currency} />
       </div>
 
-      <ProductImage url={imgUrl} />
+      <ProductImage url={`/product/${imgUrl}`} />
       <ProductName title={title} />
       <ActionBar />
     </div>
@@ -125,4 +125,13 @@ const ToolTip = ({ text }) => {
 // format number ot human readable format
 export const numberFormatter = (numValue) => {
   return numValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
+// Currency Converter TSHs to USD
+export const currencyShillingsToUsd = (
+  priceInShillings,
+  exchangeRate = 2332.0
+) => {
+  //
+  return (priceInShillings / exchangeRate).toFixed(2);
 };
