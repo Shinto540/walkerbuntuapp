@@ -11,7 +11,7 @@
 }
 
 .slider__directions {
-  @apply absolute left-1/2 top-24;
+  @apply absolute left-[55%] top-24;
 }
 
 .slider__content {
