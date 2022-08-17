@@ -51,9 +51,11 @@ const SliderDirection = () => {
           <div
             key={index}
             id={`slider-direction-${dir}`}
-            className="t-cn slider-direction"
+            className="slider__direction"
           >
-            <SliderProgress />
+            <div className={styles.slider__progress}>
+              <span></span>
+            </div>
             <SliderContent />
           </div>
         );
@@ -68,6 +70,7 @@ const SliderContent = () => {
       title: "welcome to our",
       brandName: "mchongotz e-shop",
       subTitle: "gallery 2021",
+      desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there hidden in the middle of text.",
     },
   ];
 
@@ -88,13 +91,7 @@ const SliderContent = () => {
                   {content.subTitle}
                 </span>
               </h1>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don&apos;t look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there hidden in the middle of text.{" "}
-              </p>
+              <p>{content.desc}</p>
             </div>
             <div className={styles.slider__button}>
               <Button text="Shop Now" style="text-xl p-3" />
@@ -104,10 +101,6 @@ const SliderContent = () => {
       })}
     </>
   );
-};
-
-const SliderProgress = () => {
-  return <div className="slider-progress"></div>;
 };
 
 export default Slider;
