@@ -96,7 +96,9 @@ const SliderContent = () => {
                 Ipsum, you need to be sure there hidden in the middle of text.{" "}
               </p>
             </div>
-            <Button text="Shop Now" style="text-xl p-3" />
+            <div className={styles.slider__button}>
+              <Button text="Shop Now" style="text-xl p-3" />
+            </div>
           </div>
         );
       })}
