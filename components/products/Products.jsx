@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 // Styles
-import Styles from "../styles/Product.module.css";
+import Styles from "../../styles/Product.module.css";
 
 export const ProductSectionHeader = ({ sectionTitle }) => {
   return (
