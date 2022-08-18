@@ -1,53 +1,97 @@
-import { ProductCard, ProductImage, ProductBody } from "./FeaturedProducts";
+import {
+  ProductCard,
+  ProductFilter,
+  ProductSectionHeader,
+  currencyShillingsToUsd,
+} from "../Products";
+import Link from "next/link";
+
+// Styles
 import Styles from "../../styles/Product.module.css";
 
 const PurchaseOnline = () => {
+  const products = [
+    {
+      title: "Dell - All in One",
+      price: 1_200_000,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-1.png",
+    },
+    {
+      title: "MAC Keyboard",
+      price: 60_000,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-2.png",
+    },
+    {
+      title: "headphone",
+      price: 45_000,
+      currency: "$",
+      labelText: "Sale",
+      imgUrl: "pr-3.png",
+    },
+    {
+      title: "Laptop Adapter",
+      price: 85_000,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-4.png",
+    },
+    {
+      title: "MACBook Pro",
+      price: 51_600,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-5.png",
+    },
+    {
+      title: "HP LaserJet Printer",
+      price: 499_999,
+      currency: "$",
+      labelText: "Sale",
+      imgUrl: "pr-6.png",
+    },
+    {
+      title: "Mouse Pointer",
+      price: 22_050,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-7.png",
+    },
+    {
+      title: "HP Specta",
+      price: 158_500,
+      currency: "$",
+      labelText: "New",
+      imgUrl: "pr-8.png",
+    },
+  ];
+
   return (
     <section className={Styles.products}>
-      <div className={Styles.product__title}>
-        <h2>Purchase Online on Hurst</h2>
-        <span className={Styles.title__underline}></span>
-      </div>
+      <ProductSectionHeader sectionTitle="Purchase Online on Hurst" />
+      <ProductFilter />
 
-      <div className="flex flex-wrap gap-10 mt-16">
-        <ProductCard>
-          <ProductImage url="/product/pr-1.png" />
-          <ProductBody title="dell - All in one" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-2.png" />
-          <ProductBody title="mac keyboard" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-3.png" />
-          <ProductBody title="headphone" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-4.png" />
-          <ProductBody title="laptop adaptor" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-5.png" />
-          <ProductBody title="dell - All in one" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-6.png" />
-          <ProductBody title="mac keyboard" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-7.png" />
-          <ProductBody title="headphone" />
-        </ProductCard>
-        <ProductCard>
-          <ProductImage url="/product/pr-8.png" />
-          <ProductBody title="laptop adaptor" />
-        </ProductCard>
-      </div>
-      <div className={`${Styles.prev__next} ${Styles.prev}`}>
-        P<br />r<br />e<br />v
-      </div>
-      <div className={`${Styles.prev__next} ${Styles.next}`}>
-        N<br />e<br />x<br />t
+      <div className={Styles.products__container}>
+        {products.map((product, index) => {
+          const { title, price, currency, labelText, imgUrl } = product;
+
+          return (
+            <Link key={index} href="/product" passHref>
+              <a>
+                <ProductCard
+                  price={currencyShillingsToUsd(price)}
+                  currency={currency}
+                  labelText={labelText}
+                  imgUrl={imgUrl}
+                  title={title}
+                />
+              </a>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

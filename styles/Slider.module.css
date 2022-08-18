@@ -2,31 +2,95 @@
   @apply bg-white;
   width: 650px;
   height: 280px;
+  position: relative;
 }
 
 .slider__image {
   @apply relative w-full h-full;
 }
 
+.slider__image img {
+  animation: to-slide 0.5s ease-in-out 10ms;
+}
+
 .slider__directions {
-  @apply absolute left-1/2 top-24;
+  @apply absolute left-[55%] top-24;
 }
 
 .slider__content {
-  @apply mb-9;
+  @apply mb-9 w-[85%];
 }
 
 .slider__title,
 .slider__subTitle {
-  @apply text-xl font-bold text-gray-500 uppercase;
+  @apply text-xl mb-3 block font-bold text-gray-500 uppercase;
+}
+
+.slider__title {
+  animation: to-slide 0.9s ease-in-out 0.9s;
 }
 
 .slider__brand {
-  @apply text-3xl uppercase font-bold my-1 inline-block text-gray-700;
+  @apply text-3xl uppercase font-bold mb-2 inline-block text-gray-700;
+  animation: to-slide 1s ease-in-out 1s;
+}
+
+.slider__subTitle {
+  animation: to-slide 1.1s ease-in-out 1.1s;
 }
 
 .slider__content p {
-  display: none;
+  @apply text-[16px];
+  animation: to-slide 1.2s ease-in-out 1.2s;
+}
+
+.slider__button {
+  animation: to-slide 1.3s ease-in-out 1.3s;
+}
+
+.slider__progress {
+  position: absolute;
+  right: -800px;
+  bottom: -450px;
+}
+
+.slider__progress span {
+  display: block;
+  background: rgba(30, 143, 255, 0.849);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider__progress span::before,
+.slider__progress span::after {
+  content: "";
+  position: absolute;
+  background: lightgray;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.slider__progress span::before {
+  left: -20px;
+}
+
+.slider__progress span::after {
+  right: -20px;
+}
+
+@keyframes to-slide {
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -1,8 +1,8 @@
 import React from "react";
 import { FaInstagram, FaMailBulk } from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {FaYoutube} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -10,10 +10,8 @@ import { FaTiktok } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaSearchLocation } from "react-icons/fa";
-import {  } from "react-icons/fa";
+import {} from "react-icons/fa";
 import Link from "next/link";
-
-
 
 const Footer = () => {
   return (
@@ -168,7 +166,7 @@ const Footer = () => {
             <br />
             <li className="">
               <form action="#">
-                <label for="email"></label>
+                <label htmlFor="email"></label>
                 <input
                   className="form-control
         block
@@ -193,7 +191,7 @@ const Footer = () => {
                 <br />
                 <hr />
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+                  className=" text-white font-bold py-2 px-4 rounded bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
                   type="submit"
                 >
                   Subscribe
