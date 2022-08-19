@@ -1,7 +1,12 @@
-import React from "react";
+import Layout from "../../components/Layout";
+import PageHeader from "../../components/PageHeader";
 
 const Product = () => {
-  return <div>All Product</div>;
+  return (
+    <Layout>
+      <PageHeader pageTitle="Product Grid View" />
+    </Layout>
+  );
 };
 
 export default Product;

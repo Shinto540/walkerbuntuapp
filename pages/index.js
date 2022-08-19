@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Layout from "../components/home/Layout";
+import Layout from "../components/Layout";
 import Slider from "../components/home/Slider";
 import Banner from "../components/home/Banner";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import Discounts from "../components/home/Discount";
 import PurchaseOnline from "../components/home/PurchaseOnline";
 import BrandLogo from "../components/home/BrandLogo";
-
 
 const Home = () => {
   return (
@@ -31,7 +30,6 @@ const Home = () => {
         <PurchaseOnline />
         <BrandLogo />
       </Layout>
-    
     </>
   );
 };

@@ -1,7 +1,12 @@
-import React from "react";
+import Layout from "../../components/Layout";
+import PageHeader from "../../components/PageHeader";
 
 const SingleProduct = () => {
-  return <div>Single Product</div>;
+  return (
+    <Layout>
+      <PageHeader pageTitle="Single Product" />
+    </Layout>
+  );
 };
 
 export default SingleProduct;

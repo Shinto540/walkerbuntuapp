@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page__header {
+  background-image: url(../public/about/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page__nav {
+  bottom: 10px;
+  left: 10px;
+}
