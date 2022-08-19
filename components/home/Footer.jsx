@@ -16,79 +16,13 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+      <div className="bg-gray-50 h-1/2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around items-start p-20">
         <div className="p-5">
           <ul>
-            <li className="text-gray-800 font-bold text-5xl pb-6 animate-bounce">
+            <li className="text-gray-800 font-bold text-3xl pb-6 animate-bounce">
               CONTACT <span className="text-blue-600">US</span>
             </li>
-            <div className="flex gap-6 pb-5">
-              {/*icons*/}
 
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaGoogle className="text-2xl cursor-pointer hover:text-blue-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaInstagram className="text-2xl cursor-pointer hover:text-purple-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaLinkedin className="text-2xl cursor-pointer hover:text-yellow-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaTelegram className="text-2xl cursor-pointer hover:text-blue-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaWhatsapp className="text-2xl cursor-pointer hover:text-green-600" />
-                  </a>
-                </Link>
-              </>
-              <>
-                <Link href="#">
-                  <a className="text-m">
-                    <FaTiktok className="text-2xl cursor-pointer hover:text-black-600" />
-                  </a>
-                </Link>
-              </>
-            </div>
             <div>
               <ul>
                 <li>
@@ -122,7 +56,7 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <h2 className="text-bold font-bold text-2xl ">ACCOUNTS</h2>
+            <h2 className="text-bold font-bold text-xl ">ACCOUNTS</h2>
             <hr />
             <li className="list-disc text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="#">My Wishlist</Link>
@@ -140,7 +74,7 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <h2 className="text-bold font-bold text-2xl">SHIPPING</h2>
+            <h2 className="text-bold font-bold text-xl">SHIPPING</h2>
             <hr />
             <li className="list-disc text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
               <Link href="#">New Products</Link>
@@ -161,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <h2 className="text-bold font-bold text-2xl">EMAIL NEWSLETTER</h2>
+            <h2 className="text-bold font-bold text-xl">EMAIL NEWSLETTER</h2>
             <hr />
             <br />
             <li className="">
@@ -199,6 +133,75 @@ const Footer = () => {
               </form>
             </li>
           </ul>
+        </div>
+        <hr />
+      </div>
+
+      <div className="grid flex-row w-[50] justify-center items-center">
+        <div className="flex gap-6">
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaGoogle className="text-2xl cursor-pointer hover:text-blue-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaInstagram className="text-2xl cursor-pointer hover:text-purple-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaLinkedin className="text-2xl cursor-pointer hover:text-yellow-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaTelegram className="text-2xl cursor-pointer hover:text-blue-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaWhatsapp className="text-2xl cursor-pointer hover:text-green-600" />
+              </a>
+            </Link>
+          </>
+          <>
+            <Link href="#">
+              <a className="text-m">
+                <FaTiktok className="text-2xl cursor-pointer hover:text-black-600" />
+              </a>
+            </Link>
+          </>
         </div>
       </div>
     </footer>
