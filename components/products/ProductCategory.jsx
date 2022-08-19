@@ -1,5 +1,18 @@
 const ProductCategory = () => {
-  return <div>ProductCategory</div>;
+  return (
+    
+    <section className="relative">
+        ProductCategory
+              </section>
+              
+
+
+    
+
+);
+
+  
+ 
 };
 
 export default ProductCategory;

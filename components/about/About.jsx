@@ -14,7 +14,7 @@ const about = () => {
           </div>
           <div className="relative">
             <div className="absolute left-[-200px] top-[10%] w-[600px] py-10 px-12 bg-gray-200 text-[12px]">
-              <div className="mb-6">
+              <div className="mb-2">
                 <h1 className="font-bold text-lg">ABOUT HURST</h1>
                 <div className="border-b-2 border-gray-300 w-[45px]"></div>
               </div>
