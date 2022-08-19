@@ -3,7 +3,7 @@ import {
   ProductFilter,
   ProductSectionHeader,
   currencyShillingsToUsd,
-} from "../Products";
+} from "../products/Products";
 import Link from "next/link";
 
 // Styles

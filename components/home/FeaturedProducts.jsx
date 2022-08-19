@@ -1,4 +1,4 @@
-import { ProductCard, ProductSectionHeader } from "../Products";
+import { ProductCard, ProductSectionHeader } from "../products/Products";
 import Link from "next/link";
 
 // Styles

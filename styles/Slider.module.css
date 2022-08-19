@@ -7,6 +7,9 @@
 
 .slider__image {
   @apply relative w-full h-full;
+}
+
+.slider__image img {
   animation: to-slide 0.5s ease-in-out 10ms;
 }
 
@@ -47,8 +50,8 @@
 
 .slider__progress {
   position: absolute;
-  right: 0;
-  bottom: -25%;
+  right: -800px;
+  bottom: -450px;
 }
 
 .slider__progress span {

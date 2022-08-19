@@ -7,6 +7,7 @@ import Discounts from "../components/home/Discount";
 import PurchaseOnline from "../components/home/PurchaseOnline";
 import BrandLogo from "../components/home/BrandLogo";
 
+
 const Home = () => {
   return (
     <>
@@ -30,6 +31,7 @@ const Home = () => {
         <PurchaseOnline />
         <BrandLogo />
       </Layout>
+    
     </>
   );
 };
