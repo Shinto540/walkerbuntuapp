@@ -153,7 +153,6 @@ const contacts = () => {
           </section>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
