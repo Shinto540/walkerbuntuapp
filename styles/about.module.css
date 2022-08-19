@@ -1,0 +1,13 @@
+.about__header {
+  background-image: url(../public/about/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__nav {
+    bottom: 10px;
+    left: 10px;
+}
+
+
