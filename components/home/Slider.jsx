@@ -32,16 +32,18 @@ const Slider = () => {
   ];
 
   return (
-    <section className={styles.slider__area}>
-      <div className={styles.slider__image}>
-        <ImageSlides contents={contents} />
-      </div>
-      <div className={styles.slider__directions}>
-        <div className="slider__direction">
-          <div className={styles.slider__progress}>
-            <span></span>
+    <section className={styles.slider}>
+      <div className={styles.slider__area}>
+        <div className={styles.slider__image}>
+          <ImageSlides contents={contents} />
+        </div>
+        <div className={styles.slider__directions}>
+          <div className="slider__direction">
+            <div className={styles.slider__progress}>
+              <span></span>
+            </div>
+            <SliderContent contents={contents} />
           </div>
-          <SliderContent contents={contents} />
         </div>
       </div>
     </section>

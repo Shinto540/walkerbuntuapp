@@ -1,8 +1,9 @@
+.slider {
+  @apply pb-10;
+}
+
 .slider__area {
-  @apply bg-white;
-  width: 650px;
-  height: 280px;
-  position: relative;
+  @apply bg-white relative w-[650px] h-[300px] mb-28;
 }
 
 .slider__image {
@@ -49,9 +50,8 @@
 }
 
 .slider__progress {
-  position: absolute;
-  right: -800px;
-  bottom: -450px;
+  @apply absolute bottom-[-40%];
+  @apply md:bottom-[-70%] md:right-[-1%];
 }
 
 .slider__progress span {
@@ -84,7 +84,7 @@
 
 @keyframes to-slide {
   from {
-    transform: translateY(500px);
+    transform: translateY(350px);
     opacity: 0;
   }
   to {
