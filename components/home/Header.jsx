@@ -2,28 +2,28 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-blue-500 sticky top-0 w-full shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-gray-800">
+            <a href="#" className="text-2xl font-bold text-black hover:text-gray-800">
               MchongoTZ
             </a>
           </div>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex space-x-10">
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="text-black hover:text-gray-800 cursor-pointer text-md">
               Home
             </a>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="text-black hover:text-gray-800 cursor-pointer text-md">
               Shop
             </a>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="text-black hover:text-gray-800 cursor-pointer text-md">
               About
             </a>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="text-black hover:text-gray-800 cursor-pointer text-md">
               Contact
             </a>
           </nav>
@@ -37,7 +37,7 @@ const Header = () => {
                 placeholder="Search"
               />
             </div>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="text-black hover:text-gray-800 cursor-pointer text-md">
               Cart
             </a>
           </div>
